@@ -33,8 +33,8 @@ echo Please enter the safe key found on the Github repo!
 set/p "key=>"
 if NOT %key%==BA-909-Z goto WrongKey
 
-if %key%==BA-1069 goto Correct
-
+if %key%==BA-909-Z goto Correct
+ii
 :WrongKey
 
 echo Invalid Key!
