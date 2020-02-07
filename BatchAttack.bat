@@ -57,16 +57,17 @@ echo Loading BatchAttack. . .
 ping localhost -n 1 >nul
 ping localhost -n 2 >nul
 
+goto :shrek
 goto :Keyboardspam
 goto :keyboarddisabler
 goto :mousedisabler
-goto :shrek
+goto :looper
 goto :end
 
 timeout /t 5
 goto 
 
-:Looper 
+:looper 
 
 :loop 
 start 
@@ -75,20 +76,19 @@ goto loop
 
 
 :Keyboardspam
-
+echo Feature not complete!
 :keyboarddisabler
-
+echo Feature not complete!
 :mousedisabler
-
+echo Feature not complete!
 :soundspam
+echo Feature not complete!
 
 :shrek
 start https://www.youtube.com/watch?v=pxw-5qfJ1dk
 
-
 :end
-pause
-
+exit
 
 
 
