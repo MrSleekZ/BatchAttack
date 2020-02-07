@@ -31,7 +31,7 @@ if '%errorlevel%' NEQ '0' (
 echo Please enter the safe key found on the Github repo!
 :key
 set/p "key=>"
-if NOT %key%==BA-1069 goto WrongKey
+if NOT %key%==BA-909-Z goto WrongKey
 
 if %key%==BA-1069 goto Correct
 
