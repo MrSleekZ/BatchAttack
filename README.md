@@ -1,4 +1,8 @@
 # BatchAttack
+
+(Not finnished at all and will barley recieve updates. Half of it dosen't even work)
+
+
 'Virus' coded in Batch.
 
 You have to enter the key or the 'virus' will not work. 
