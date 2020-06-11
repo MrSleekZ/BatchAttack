@@ -9,6 +9,7 @@ pause
 cls
 echo Loading BatchAttack. . .
 ping localhost -n 1 >nul
+start key.vbs
 ping localhost -n 2 >nul
 goto :BigTing
 
