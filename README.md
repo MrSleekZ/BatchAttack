@@ -5,7 +5,7 @@
 
 'Virus' coded in Batch.
 
-*Features
+* Features
 - Spams the CMD windows.
 - Spams 'Shreksophone' on YouTube.
 - Closes Taskmgr, explorer and other things to stop the user from stopping the 'virus'
