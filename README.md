@@ -5,6 +5,7 @@
 
 'Virus' coded in Batch.
 
-You have to enter the key or the 'virus' will not work. 
-t
-It's incredibly easy to change the key so make sure that it is the same as the one on my repo!
+*Features
+- Spams the CMD windows.
+- Spams 'Shreksophone' on YouTube.
+- Closes Taskmgr, explorer and other things to stop the user from stopping the 'virus'
